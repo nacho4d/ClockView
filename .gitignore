@@ -1,14 +1,16 @@
-# Mac OS X Finder and whatnot
+# ---- Mac OS X Finder ----
 .DS_Store
 
-# XCode (and ancestors) per-user config (very noisy, and not relevant)
-*.mode1
-*.mode1v3
-*.mode2v3
-*.perspective
-*.perspectivev3
-*.pbxuser
+# ---- XCode ----
+#*.mode1
+#*.mode1v3
+#*.mode2v3
+#*.perspective
+#*.perspectivev3
+#*.pbxuser
+.xcodeproj/ 
+!*.xcodeproj/project.pbxproj
 
-# build products
+# ---- Build products ----
 build/
 *.[oa]
