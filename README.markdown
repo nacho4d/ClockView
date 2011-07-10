@@ -6,34 +6,29 @@
 ## How to use
 It can be initialized with the default style:
 
-
-	//ClockView with default style
-	ClockView *clockView = [[ClockView alloc] initWithFrame:CGRectMake(0, 320, 100, 100)];
-	[aView addSubview:clockView];
-        [clockView start];
-        
-        ... do your thing here :)
-        
-        [clockView stop];
-        [clockView release];
-
+    ClockView *clockView = [[ClockView alloc] initWithFrame:CGRectMake(0, 320, 100, 100)];
+    [aView addSubview:clockView];
+    [clockView start];
+    ... do your thing here :)
+    [clockView stop];
+    [clockView release];
 
 Or it can be customized:
 
-	ClockView *clockView = [[ClockView alloc] initWithFrame:CGRectMake(-15, 0, 350, 350)];
-	[clockView setClockBackgroundImage:[UIImage imageNamed:@"clock-background.png"].CGImage];
-	[clockView setHourHandImage:[UIImage imageNamed:@"clock-hour-background.png"].CGImage];
-	[clockView setMinHandImage:[UIImage imageNamed:@"clock-min-background.png"].CGImage];
-	[clockView setSecHandImage:[UIImage imageNamed:@"clock-sec-background.png"].CGImage];
-	[self.view addSubview:clockView];
-        [clockView start];
-        
-        ... do your thing here :)
-        
-        [clockView stop];
-        [clockView release];
+    ClockView *clockView = [[ClockView alloc] initWithFrame:CGRectMake(-15, 0, 350, 350)];
+    [clockView setClockBackgroundImage:[UIImage imageNamed:@"clock-background.png"].CGImage];
+    [clockView setHourHandImage:[UIImage imageNamed:@"clock-hour-background.png"].CGImage];
+    [clockView setMinHandImage:[UIImage imageNamed:@"clock-min-background.png"].CGImage];
+    [clockView setSecHandImage:[UIImage imageNamed:@"clock-sec-background.png"].CGImage];
+    [self.view addSubview:clockView];
+    [clockView start];
+    ... do your thing here :)
+    [clockView stop];
+    [clockView release];
 
-This is just a sample :)
+Example of ClockView. 
+*Big*: Customized style, 
+*Small*: Default style"
 
 ![Example of ClockView](https://github.com/nacho4d/ClockView/blob/master/clock/Images/OutputSample.png?raw=true "Example of ClockView. Big:Customized style, Small:Default style")
 
