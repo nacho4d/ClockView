@@ -4,6 +4,7 @@
 //
 //  Created by Enriquez Guillermo on 7/2/11.
 //  Copyright 2011 Nacho4d. All rights reserved.
+//  See the file License.txt for copying permission.
 //
 
 #import "ClockViewController.h"
@@ -39,6 +40,10 @@
 {
     [super viewDidLoad];
 	
+	//Original clock images was taken from:
+	// http://www.comparestoreprices.co.uk/wall-clocks/bliss-roman-aluminium-clock.asp
+	// It can be found in Images folder: bliss-roman-aluminium-clock.jpg
+		
 	//ClockView with some images
 	clockView1 = [[ClockView alloc] initWithFrame:CGRectMake(-15, 0, 350, 350)];
 	[clockView1 setClockBackgroundImage:[UIImage imageNamed:@"clock-background.png"].CGImage];

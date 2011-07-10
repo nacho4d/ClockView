@@ -11,6 +11,10 @@
 .xcodeproj/ 
 !*.xcodeproj/project.pbxproj
 
+*.xcodeproj/project.xcworkspace/
+*.xcodeproj/xcuserdata/
+
+
 # ---- Build products ----
 build/
 *.[oa]
