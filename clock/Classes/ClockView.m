@@ -36,7 +36,7 @@
 		hourHand.cornerRadius = 0.0;
 		
 	}
-	hourHand.contents = (id)image;
+	hourHand.contents = (__bridge id)image;
 }
 
 - (void)setMinHandImage:(CGImageRef)image
@@ -46,7 +46,7 @@
 	}else{
 		minHand.backgroundColor = [UIColor clearColor].CGColor;
 	}
-	minHand.contents = (id)image;
+	minHand.contents = (__bridge id)image;
 }
 
 - (void)setSecHandImage:(CGImageRef)image
@@ -60,7 +60,7 @@
 		secHand.borderWidth = 0.0;
 		secHand.borderColor = [UIColor clearColor].CGColor;
 	}
-	secHand.contents = (id)image;
+	secHand.contents = (__bridge id)image;
 }
 
 - (void)setClockBackgroundImage:(CGImageRef)image
@@ -74,7 +74,7 @@
 		containerLayer.borderWidth = 0.0;
 		containerLayer.cornerRadius = 0.0;
 	}
-	containerLayer.contents = (id)image;
+	containerLayer.contents = (__bridge id)image;
 }
 
 #pragma mark - Private Methods
@@ -134,8 +134,8 @@ float Degrees2Radians(float degrees) { return degrees * M_PI / 180; }
 		w = HOURS_HAND_WIDTH;
 		h = length*HOURS_HAND_LENGTH;
 	}else{
-		w = CGImageGetWidth((CGImageRef)hourHand.contents)/scale;
-		h = CGImageGetHeight((CGImageRef)hourHand.contents)/scale;
+		w = CGImageGetWidth((__bridge CGImageRef)hourHand.contents)/scale;
+		h = CGImageGetHeight((__bridge CGImageRef)hourHand.contents)/scale;
 	}
 	hourHand.bounds = CGRectMake(0,0,w,h);
 	
@@ -143,8 +143,8 @@ float Degrees2Radians(float degrees) { return degrees * M_PI / 180; }
 		w = MIN_HAND_WIDTH;
 		h = length*MIN_HAND_LENGTH;
 	}else{
-		w = CGImageGetWidth((CGImageRef)minHand.contents)/scale;
-		h = CGImageGetHeight((CGImageRef)minHand.contents)/scale;
+		w = CGImageGetWidth((__bridge CGImageRef)minHand.contents)/scale;
+		h = CGImageGetHeight((__bridge CGImageRef)minHand.contents)/scale;
 	}
 	minHand.bounds = CGRectMake(0,0,w,h);
 	
@@ -152,8 +152,8 @@ float Degrees2Radians(float degrees) { return degrees * M_PI / 180; }
 		w = SEC_HAND_WIDTH;
 		h = length*SEC_HAND_LENGTH;
 	}else{
-		w = CGImageGetWidth((CGImageRef)secHand.contents)/scale;
-		h = CGImageGetHeight((CGImageRef)secHand.contents)/scale;
+		w = CGImageGetWidth((__bridge CGImageRef)secHand.contents)/scale;
+		h = CGImageGetHeight((__bridge CGImageRef)secHand.contents)/scale;
 	}
 	secHand.bounds = CGRectMake(0,0,w,h);
 
@@ -168,10 +168,10 @@ float Degrees2Radians(float degrees) { return degrees * M_PI / 180; }
 	self = [super initWithFrame:frame];
 	if (self) {
 		
-		containerLayer = [[CALayer layer] retain];
-		hourHand = [[CALayer layer] retain];
-		minHand = [[CALayer layer] retain];
-		secHand = [[CALayer layer] retain];
+		containerLayer = [CALayer layer];
+		hourHand = [CALayer layer];
+		minHand = [CALayer layer];
+		secHand = [CALayer layer];
 
 		//default appearance
 		[self setClockBackgroundImage:NULL];
@@ -188,15 +188,15 @@ float Degrees2Radians(float degrees) { return degrees * M_PI / 180; }
 	return self;
 }
 
+- (void)removeFromSuperview
+{
+	[self stop];
+	[super removeFromSuperview];
+}
+
 - (void)dealloc
 {
 	[self stop];
-	[hourHand release];
-	[minHand release];
-	[secHand release];
-	[containerLayer release];
-
-	[super dealloc];
 }
 
 @end
