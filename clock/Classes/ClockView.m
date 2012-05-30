@@ -125,13 +125,17 @@ float Degrees2Radians(float degrees) { return degrees * M_PI / 180; }
 	hourHand.position = minHand.position = secHand.position = c;
 
 	CGFloat w, h;
+	CGFloat scale = 1;
+	if ([[UIScreen mainScreen] respondsToSelector:@selector(scale)]) {
+		scale = [UIScreen mainScreen].scale;
+	}
 	
 	if (hourHand.contents == NULL){
 		w = HOURS_HAND_WIDTH;
 		h = length*HOURS_HAND_LENGTH;
 	}else{
-		w = CGImageGetWidth((CGImageRef)hourHand.contents);
-		h = CGImageGetHeight((CGImageRef)hourHand.contents);
+		w = CGImageGetWidth((CGImageRef)hourHand.contents)/scale;
+		h = CGImageGetHeight((CGImageRef)hourHand.contents)/scale;
 	}
 	hourHand.bounds = CGRectMake(0,0,w,h);
 	
@@ -139,8 +143,8 @@ float Degrees2Radians(float degrees) { return degrees * M_PI / 180; }
 		w = MIN_HAND_WIDTH;
 		h = length*MIN_HAND_LENGTH;
 	}else{
-		w = CGImageGetWidth((CGImageRef)minHand.contents);
-		h = CGImageGetHeight((CGImageRef)minHand.contents);
+		w = CGImageGetWidth((CGImageRef)minHand.contents)/scale;
+		h = CGImageGetHeight((CGImageRef)minHand.contents)/scale;
 	}
 	minHand.bounds = CGRectMake(0,0,w,h);
 	
@@ -148,8 +152,8 @@ float Degrees2Radians(float degrees) { return degrees * M_PI / 180; }
 		w = SEC_HAND_WIDTH;
 		h = length*SEC_HAND_LENGTH;
 	}else{
-		w = CGImageGetWidth((CGImageRef)secHand.contents);
-		h = CGImageGetHeight((CGImageRef)secHand.contents);
+		w = CGImageGetWidth((CGImageRef)secHand.contents)/scale;
+		h = CGImageGetHeight((CGImageRef)secHand.contents)/scale;
 	}
 	secHand.bounds = CGRectMake(0,0,w,h);
 
