@@ -21,8 +21,12 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {    
     
-    // Override point for customization after app launch. 
-    [self.window addSubview:viewController.view];
+    // Override point for customization after app launch.
+	if ([self.window respondsToSelector:@selector(setRootViewController:)]) {
+		[self.window setRootViewController:self.viewController];
+	} else {
+		[self.window addSubview:viewController.view];
+	}
     [self.window makeKeyAndVisible];
 
 	return YES;
