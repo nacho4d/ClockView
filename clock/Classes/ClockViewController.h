@@ -14,7 +14,7 @@
 {
 }
 
-@property (nonatomic, strong) ClockView *clockView1;
-@property (nonatomic, strong) ClockView *clockView2;
+@property (nonatomic, strong) IBOutlet ClockView *clockView1;
+@property (nonatomic, strong) IBOutlet ClockView *clockView2;
 
 @end

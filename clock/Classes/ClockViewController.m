@@ -37,19 +37,11 @@
 	// http://www.comparestoreprices.co.uk/wall-clocks/bliss-roman-aluminium-clock.asp
 	// It can be found in Images folder: bliss-roman-aluminium-clock.jpg
 		
-	//ClockView with some images
-	clockView1 = [[ClockView alloc] initWithFrame:CGRectMake(-15, 0, 350, 350)];
-	[clockView1 setClockBackgroundImage:[UIImage imageNamed:@"clock-background.png"].CGImage];
+	// We customize the background images of clockView1, while clockView2 has default background.
+    [clockView1 setClockBackgroundImage:[UIImage imageNamed:@"clock-background.png"].CGImage];
 	[clockView1 setHourHandImage:[UIImage imageNamed:@"clock-hour-background.png"].CGImage];
 	[clockView1 setMinHandImage:[UIImage imageNamed:@"clock-min-background.png"].CGImage];
 	[clockView1 setSecHandImage:[UIImage imageNamed:@"clock-sec-background.png"].CGImage];
-	clockView1.autoresizingMask = UIViewAutoresizingFlexibleWidth | UIViewAutoresizingFlexibleHeight;
-	[self.view addSubview:clockView1];
-	
-	//ClockView with default style
-	clockView2 = [[ClockView alloc] initWithFrame:CGRectMake(0, 320, 100, 100)];
-	clockView2.autoresizingMask = UIViewAutoresizingFlexibleWidth | UIViewAutoresizingFlexibleHeight;
-	[self.view addSubview:clockView2];
 
 }
 
