@@ -112,6 +112,26 @@ float Degrees2Radians(float degrees) { return degrees * M_PI / 180; }
 	hourHand.transform = CATransform3DMakeRotation (hourAngle+M_PI, 0, 0, 1);
 }
 
+-(void)defaultSetup
+{
+    containerLayer = [CALayer layer];
+    hourHand = [CALayer layer];
+    minHand = [CALayer layer];
+    secHand = [CALayer layer];
+    
+    //default appearance
+    [self setClockBackgroundImage:NULL];
+    [self setHourHandImage:NULL];
+    [self setMinHandImage:NULL];
+    [self setSecHandImage:NULL];
+    
+    //add all created sublayers
+    [containerLayer addSublayer:hourHand];
+    [containerLayer addSublayer:minHand];
+    [containerLayer addSublayer:secHand];
+    [self.layer addSublayer:containerLayer];
+}
+
 #pragma mark - Overrides
 
 - (void) layoutSubviews
@@ -167,25 +187,17 @@ float Degrees2Radians(float degrees) { return degrees * M_PI / 180; }
 {
 	self = [super initWithFrame:frame];
 	if (self) {
-		
-		containerLayer = [CALayer layer];
-		hourHand = [CALayer layer];
-		minHand = [CALayer layer];
-		secHand = [CALayer layer];
-
-		//default appearance
-		[self setClockBackgroundImage:NULL];
-		[self setHourHandImage:NULL];
-		[self setMinHandImage:NULL];
-		[self setSecHandImage:NULL];
-		
-		//add all created sublayers
-		[containerLayer addSublayer:hourHand];
-		[containerLayer addSublayer:minHand];
-		[containerLayer addSublayer:secHand];
-		[self.layer addSublayer:containerLayer];
+        
+		[self defaultSetup];
+        
 	}
 	return self;
+}
+
+- (void)awakeFromNib
+{
+    [super awakeFromNib];
+    [self defaultSetup];
 }
 
 - (void)removeFromSuperview
