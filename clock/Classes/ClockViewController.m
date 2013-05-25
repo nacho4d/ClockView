@@ -71,4 +71,36 @@
 	return YES;
 }
 
+- (void)viewWillLayoutSubviews
+{
+	[super viewWillLayoutSubviews];
+
+	// This is just to make the sample look nicer. This could be done easier with
+	// AutoLayout but it is not available in iOS5, again, this is just for this example
+	const CGSize size1 = self.clockView1.frame.size;
+	const CGSize size2 = self.clockView2.frame.size;
+
+	if (UIInterfaceOrientationIsPortrait(self.interfaceOrientation)) {
+		float verticalSeparation = (self.view.bounds.size.height - size1.height - size2.height)/3.0;
+		self.clockView1.frame = CGRectMake((self.view.bounds.size.width - size1.width)/2,
+										   verticalSeparation,
+										   size1.width,
+										   size1.height);
+		self.clockView2.frame = CGRectMake((self.view.bounds.size.width - size2.width)/2,
+										   verticalSeparation*2 + size1.height,
+										   size2.width,
+										   size2.height);
+	} else {
+		float horizontalSeparation = (self.view.bounds.size.width - size1.width - size2.width)/3;
+		self.clockView1.frame = CGRectMake(horizontalSeparation,
+										   (self.view.bounds.size.height - size1.height)/2,
+										   size1.width,
+										   size1.height);
+		self.clockView2.frame = CGRectMake(horizontalSeparation*2 + size1.width,
+										   (self.view.bounds.size.height - size2.height)/2,
+										   size2.width,
+										   size2.height);
+	}
+}
+
 @end
