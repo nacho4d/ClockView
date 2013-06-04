@@ -14,11 +14,15 @@
 
 @synthesize clockView1, clockView2;
 
+- (id)init
+{
+	self = [super initWithNibName:nil bundle:nil];
+	return self;
+}
+
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
 {
-    self = [super initWithNibName:nibNameOrNil bundle:nibBundleOrNil];
-    if (self) {
-    }
+    self = [super initWithNibName:@"ClockViewController" bundle:nibBundleOrNil];
     return self;
 }
 
