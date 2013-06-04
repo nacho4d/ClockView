@@ -30,7 +30,7 @@ Example of ClockView.
 *Big*: Customized style, 
 *Small*: Default style"
 
-![Example of ClockView](https://github.com/nacho4d/ClockView/blob/master/clock/Images/OutputSample.png?raw=true "Example of ClockView. Big:Customized style, Small:Default style")
+![Example of ClockView](https://github.com/nacho4d/ClockView/blob/master/ClockView/ClockViewSampleApp/Images/OutputSample.png?raw=true "Example of ClockView. Big:Customized style, Small:Default style")
 
 ##License
 

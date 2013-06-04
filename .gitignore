@@ -10,6 +10,7 @@
 #*.pbxuser
 .xcodeproj/ 
 !*.xcodeproj/project.pbxproj
+*.xcuserdatad
 
 *.xcodeproj/project.xcworkspace/
 *.xcodeproj/xcuserdata/
