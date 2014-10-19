@@ -20,6 +20,7 @@ Or it can be customized:
     [clockView setHourHandImage:[UIImage imageNamed:@"clock-hour-background.png"].CGImage];
     [clockView setMinHandImage:[UIImage imageNamed:@"clock-min-background.png"].CGImage];
     [clockView setSecHandImage:[UIImage imageNamed:@"clock-sec-background.png"].CGImage];
+    [clockView setSecHandContinuos:YES]; // Move the second's hand continously, Off by default
     [self.view addSubview:clockView];
     [clockView start];
     ... do your thing here :)
