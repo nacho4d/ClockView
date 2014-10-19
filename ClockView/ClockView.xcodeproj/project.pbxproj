@@ -287,7 +287,7 @@
 			name = ClockViewTests;
 			productName = ClockViewTests;
 			productReference = 9A0D4F361754F28A003D3ED0 /* ClockViewTests.octest */;
-			productType = "com.apple.product-type.bundle";
+			productType = "com.apple.product-type.bundle.ocunit-test";
 		};
 		9A0D4F681754F5D9003D3ED0 /* ClockView */ = {
 			isa = PBXNativeTarget;
