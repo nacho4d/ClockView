@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Scheme
-   LastUpgradeVersion = "0460"
+   LastUpgradeVersion = "0600"
    version = "1.3">
    <BuildAction
       parallelizeBuildables = "YES"
@@ -63,6 +63,15 @@
       ignoresPersistentStateOnLaunch = "NO"
       debugDocumentVersioning = "YES"
       allowLocationSimulation = "YES">
+      <MacroExpansion>
+         <BuildableReference
+            BuildableIdentifier = "primary"
+            BlueprintIdentifier = "9A0D4F681754F5D9003D3ED0"
+            BuildableName = "libClockView.a"
+            BlueprintName = "ClockView"
+            ReferencedContainer = "container:ClockView.xcodeproj">
+         </BuildableReference>
+      </MacroExpansion>
       <AdditionalOptions>
       </AdditionalOptions>
    </LaunchAction>
