@@ -107,7 +107,17 @@ float Degrees2Radians(float degrees) { return degrees * M_PI / 180; }
 	CGFloat hourAngle = Degrees2Radians(hours/12.0*360) + minAngle/12.0;
 	
 	//reflect the rotations + 180 degres since CALayers coordinate system is inverted
-	secHand.transform = CATransform3DMakeRotation (secAngle+M_PI, 0, 0, 1);
+	if (self.secHandContinuos) {
+		CGFloat prevSecAngle = Degrees2Radians((seconds -1)/60.0*360);
+		[secHand removeAnimationForKey:@"transform"];
+		CABasicAnimation *ani = [CABasicAnimation animationWithKeyPath:@"transform"];
+		ani.duration = 1.f;
+		ani.fromValue = [NSValue valueWithCATransform3D:CATransform3DMakeRotation(prevSecAngle+M_PI, 0, 0, 1)];
+		ani.toValue = [NSValue valueWithCATransform3D:CATransform3DMakeRotation(secAngle+M_PI, 0, 0, 1)];
+		[secHand addAnimation:ani forKey:@"transform"];
+	} else {
+		secHand.transform = CATransform3DMakeRotation (secAngle+M_PI, 0, 0, 1);
+	}
 	minHand.transform = CATransform3DMakeRotation (minAngle+M_PI, 0, 0, 1);
 	hourHand.transform = CATransform3DMakeRotation (hourAngle+M_PI, 0, 0, 1);
 }
