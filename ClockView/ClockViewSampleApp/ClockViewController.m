@@ -46,6 +46,7 @@
 	[clockView1 setHourHandImage:[UIImage imageNamed:@"clock-hour-background.png"].CGImage];
 	[clockView1 setMinHandImage:[UIImage imageNamed:@"clock-min-background.png"].CGImage];
 	[clockView1 setSecHandImage:[UIImage imageNamed:@"clock-sec-background.png"].CGImage];
+	[clockView1 setSecHandContinuos:YES];
 
 }
 
