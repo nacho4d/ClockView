@@ -6,10 +6,8 @@ xcode_scheme: ClockView
 xcode_sdk: iphonesimulator
 #before_install:
 #  - gem install xcpretty
-# Cannot do this because it is not exported.
-#  - xctool -v foo >/dev/null 2>&1 || { echo >&2 "No xctool found. Using xcodebuild and xcpretty" && alias xctool='xcodebuild "$@" | xcpretty -c'; exit 0; }
 #before_script:
 #  - set -o pipefail
 script:
   - uname -a
-  - xcodebuild -workspace ClockView.xcworkspace -scheme ClockView -sdk -destination 'platform=iOS Simulator,name=iPhone 6,OS=9.3' iphonesimulator build test
+  - xcodebuild -workspace ClockView.xcworkspace -scheme ClockView -sdk iphonesimulator -destination 'platform=iOS Simulator,name=iPhone 6,OS=10.3' build test | xcpretty -c
