@@ -46,13 +46,22 @@
             skipped = "NO">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "9A0D4F351754F28A003D3ED0"
-               BuildableName = "ClockViewTests.octest"
-               BlueprintName = "ClockViewTests"
+               BlueprintIdentifier = "4F5DB0691EB60DE900DCBA19"
+               BuildableName = "ClockViewTest.xctest"
+               BlueprintName = "ClockViewTest"
                ReferencedContainer = "container:ClockView.xcodeproj">
             </BuildableReference>
          </TestableReference>
       </Testables>
+      <MacroExpansion>
+         <BuildableReference
+            BuildableIdentifier = "primary"
+            BlueprintIdentifier = "9A0D4F681754F5D9003D3ED0"
+            BuildableName = "libClockView.a"
+            BlueprintName = "ClockView"
+            ReferencedContainer = "container:ClockView.xcodeproj">
+         </BuildableReference>
+      </MacroExpansion>
       <AdditionalOptions>
       </AdditionalOptions>
    </TestAction>
@@ -84,6 +93,15 @@
       savedToolIdentifier = ""
       useCustomWorkingDirectory = "NO"
       debugDocumentVersioning = "YES">
+      <MacroExpansion>
+         <BuildableReference
+            BuildableIdentifier = "primary"
+            BlueprintIdentifier = "9A0D4F681754F5D9003D3ED0"
+            BuildableName = "libClockView.a"
+            BlueprintName = "ClockView"
+            ReferencedContainer = "container:ClockView.xcodeproj">
+         </BuildableReference>
+      </MacroExpansion>
    </ProfileAction>
    <AnalyzeAction
       buildConfiguration = "Debug">

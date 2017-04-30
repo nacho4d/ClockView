@@ -7,11 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		4F5DB0651EB5F92C00DCBA19 /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4F5DB0641EB5F92C00DCBA19 /* XCTest.framework */; };
-		9A0D4F391754F28A003D3ED0 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1DF5F4DF0D08C38300B7A737 /* UIKit.framework */; };
-		9A0D4F3A1754F28A003D3ED0 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1D30AB110D05D00D00671497 /* Foundation.framework */; };
-		9A0D4F401754F28A003D3ED0 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 9A0D4F3E1754F28A003D3ED0 /* InfoPlist.strings */; };
-		9A0D4F431754F28A003D3ED0 /* ClockViewTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 9A0D4F421754F28A003D3ED0 /* ClockViewTests.m */; };
+		4F5DB06F1EB60DE900DCBA19 /* libClockView.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 9A0D4F691754F5D9003D3ED0 /* libClockView.a */; };
+		4F5DB0761EB60E2C00DCBA19 /* ClockViewTest.m in Sources */ = {isa = PBXBuildFile; fileRef = 4F5DB0751EB60E2C00DCBA19 /* ClockViewTest.m */; };
 		9A0D4F6A1754F5D9003D3ED0 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1D30AB110D05D00D00671497 /* Foundation.framework */; };
 		9A0D4F6F1754F5D9003D3ED0 /* ClockView.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 9A0D4F6E1754F5D9003D3ED0 /* ClockView.h */; };
 		9A0D4F711754F5D9003D3ED0 /* ClockView.m in Sources */ = {isa = PBXBuildFile; fileRef = 9A0D4F701754F5D9003D3ED0 /* ClockView.m */; };
@@ -38,6 +35,16 @@
 		9ABEF221175E287800DA41C7 /* OutputSample.png in Resources */ = {isa = PBXBuildFile; fileRef = 9ABEF219175E287800DA41C7 /* OutputSample.png */; };
 /* End PBXBuildFile section */
 
+/* Begin PBXContainerItemProxy section */
+		4F5DB0701EB60DE900DCBA19 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 29B97313FDCFA39411CA2CEA /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 9A0D4F681754F5D9003D3ED0;
+			remoteInfo = ClockView;
+		};
+/* End PBXContainerItemProxy section */
+
 /* Begin PBXCopyFilesBuildPhase section */
 		9A0D4F671754F5D9003D3ED0 /* CopyFiles */ = {
 			isa = PBXCopyFilesBuildPhase;
@@ -56,13 +63,10 @@
 		1DF5F4DF0D08C38300B7A737 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		288765A40DF7441C002DB57D /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
 		4F5DB0641EB5F92C00DCBA19 /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Platforms/iPhoneOS.platform/Developer/Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
-		9A0D4F361754F28A003D3ED0 /* ClockViewTests.octest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ClockViewTests.octest; sourceTree = BUILT_PRODUCTS_DIR; };
+		4F5DB06A1EB60DE900DCBA19 /* ClockViewTest.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ClockViewTest.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		4F5DB06E1EB60DE900DCBA19 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		4F5DB0751EB60E2C00DCBA19 /* ClockViewTest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ClockViewTest.m; sourceTree = "<group>"; };
 		9A0D4F371754F28A003D3ED0 /* SenTestingKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SenTestingKit.framework; path = Library/Frameworks/SenTestingKit.framework; sourceTree = DEVELOPER_DIR; };
-		9A0D4F3D1754F28A003D3ED0 /* ClockViewTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "ClockViewTests-Info.plist"; sourceTree = "<group>"; };
-		9A0D4F3F1754F28A003D3ED0 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
-		9A0D4F411754F28A003D3ED0 /* ClockViewTests.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ClockViewTests.h; sourceTree = "<group>"; };
-		9A0D4F421754F28A003D3ED0 /* ClockViewTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ClockViewTests.m; sourceTree = "<group>"; };
-		9A0D4F441754F28A003D3ED0 /* ClockViewTests-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "ClockViewTests-Prefix.pch"; sourceTree = "<group>"; };
 		9A0D4F691754F5D9003D3ED0 /* libClockView.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libClockView.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		9A0D4F6D1754F5D9003D3ED0 /* ClockView-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "ClockView-Prefix.pch"; sourceTree = "<group>"; };
 		9A0D4F6E1754F5D9003D3ED0 /* ClockView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ClockView.h; sourceTree = "<group>"; };
@@ -94,13 +98,11 @@
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		9A0D4F321754F28A003D3ED0 /* Frameworks */ = {
+		4F5DB0671EB60DE900DCBA19 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				4F5DB0651EB5F92C00DCBA19 /* XCTest.framework in Frameworks */,
-				9A0D4F391754F28A003D3ED0 /* UIKit.framework in Frameworks */,
-				9A0D4F3A1754F28A003D3ED0 /* Foundation.framework in Frameworks */,
+				4F5DB06F1EB60DE900DCBA19 /* libClockView.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -130,9 +132,9 @@
 		19C28FACFE9D520D11CA2CBB /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				9A0D4F361754F28A003D3ED0 /* ClockViewTests.octest */,
 				9A0D4F691754F5D9003D3ED0 /* libClockView.a */,
 				9A0D4F791754F5F5003D3ED0 /* ClockViewSampleApp.app */,
+				4F5DB06A1EB60DE900DCBA19 /* ClockViewTest.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -141,7 +143,7 @@
 			isa = PBXGroup;
 			children = (
 				9A0D4F6B1754F5D9003D3ED0 /* ClockView */,
-				9A0D4F3B1754F28A003D3ED0 /* ClockViewTests */,
+				4F5DB06B1EB60DE900DCBA19 /* ClockViewTest */,
 				9A0D4F7D1754F5F5003D3ED0 /* ClockViewSampleApp */,
 				29B97323FDCFA39411CA2CEA /* Frameworks */,
 				19C28FACFE9D520D11CA2CBB /* Products */,
@@ -162,24 +164,13 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
-		9A0D4F3B1754F28A003D3ED0 /* ClockViewTests */ = {
+		4F5DB06B1EB60DE900DCBA19 /* ClockViewTest */ = {
 			isa = PBXGroup;
 			children = (
-				9A0D4F411754F28A003D3ED0 /* ClockViewTests.h */,
-				9A0D4F421754F28A003D3ED0 /* ClockViewTests.m */,
-				9A0D4F3C1754F28A003D3ED0 /* Supporting Files */,
+				4F5DB06E1EB60DE900DCBA19 /* Info.plist */,
+				4F5DB0751EB60E2C00DCBA19 /* ClockViewTest.m */,
 			);
-			path = ClockViewTests;
-			sourceTree = "<group>";
-		};
-		9A0D4F3C1754F28A003D3ED0 /* Supporting Files */ = {
-			isa = PBXGroup;
-			children = (
-				9A0D4F3D1754F28A003D3ED0 /* ClockViewTests-Info.plist */,
-				9A0D4F3E1754F28A003D3ED0 /* InfoPlist.strings */,
-				9A0D4F441754F28A003D3ED0 /* ClockViewTests-Prefix.pch */,
-			);
-			name = "Supporting Files";
+			path = ClockViewTest;
 			sourceTree = "<group>";
 		};
 		9A0D4F6B1754F5D9003D3ED0 /* ClockView */ = {
@@ -273,23 +264,23 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		9A0D4F351754F28A003D3ED0 /* ClockViewTests */ = {
+		4F5DB0691EB60DE900DCBA19 /* ClockViewTest */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 9A0D4F471754F28A003D3ED0 /* Build configuration list for PBXNativeTarget "ClockViewTests" */;
+			buildConfigurationList = 4F5DB0721EB60DE900DCBA19 /* Build configuration list for PBXNativeTarget "ClockViewTest" */;
 			buildPhases = (
-				9A0D4F311754F28A003D3ED0 /* Sources */,
-				9A0D4F321754F28A003D3ED0 /* Frameworks */,
-				9A0D4F331754F28A003D3ED0 /* Resources */,
-				9A0D4F341754F28A003D3ED0 /* ShellScript */,
+				4F5DB0661EB60DE900DCBA19 /* Sources */,
+				4F5DB0671EB60DE900DCBA19 /* Frameworks */,
+				4F5DB0681EB60DE900DCBA19 /* Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				4F5DB0711EB60DE900DCBA19 /* PBXTargetDependency */,
 			);
-			name = ClockViewTests;
-			productName = ClockViewTests;
-			productReference = 9A0D4F361754F28A003D3ED0 /* ClockViewTests.octest */;
-			productType = "com.apple.product-type.bundle.ocunit-test";
+			name = ClockViewTest;
+			productName = ClockViewTest;
+			productReference = 4F5DB06A1EB60DE900DCBA19 /* ClockViewTest.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
 		};
 		9A0D4F681754F5D9003D3ED0 /* ClockView */ = {
 			isa = PBXNativeTarget;
@@ -334,6 +325,13 @@
 			attributes = {
 				LastTestingUpgradeCheck = 0600;
 				LastUpgradeCheck = 0830;
+				TargetAttributes = {
+					4F5DB0691EB60DE900DCBA19 = {
+						CreatedOnToolsVersion = 8.3.2;
+						DevelopmentTeam = Z2DF73ZW2D;
+						ProvisioningStyle = Automatic;
+					};
+				};
 			};
 			buildConfigurationList = C01FCF4E08A954540054247B /* Build configuration list for PBXProject "ClockView" */;
 			compatibilityVersion = "Xcode 3.2";
@@ -351,18 +349,17 @@
 			projectRoot = "";
 			targets = (
 				9A0D4F681754F5D9003D3ED0 /* ClockView */,
-				9A0D4F351754F28A003D3ED0 /* ClockViewTests */,
+				4F5DB0691EB60DE900DCBA19 /* ClockViewTest */,
 				9A0D4F781754F5F5003D3ED0 /* ClockViewSampleApp */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
-		9A0D4F331754F28A003D3ED0 /* Resources */ = {
+		4F5DB0681EB60DE900DCBA19 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				9A0D4F401754F28A003D3ED0 /* InfoPlist.strings in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -389,19 +386,6 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		9A0D4F341754F28A003D3ED0 /* ShellScript */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "# Run the unit tests in this test bundle.\n\"${SYSTEM_DEVELOPER_DIR}/Tools/RunUnitTests\"\n";
-		};
 		9A9DDBAB175CD62A00CCB3C7 /* ShellScript */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -418,11 +402,11 @@
 /* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
-		9A0D4F311754F28A003D3ED0 /* Sources */ = {
+		4F5DB0661EB60DE900DCBA19 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				9A0D4F431754F28A003D3ED0 /* ClockViewTests.m in Sources */,
+				4F5DB0761EB60E2C00DCBA19 /* ClockViewTest.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -446,15 +430,15 @@
 		};
 /* End PBXSourcesBuildPhase section */
 
-/* Begin PBXVariantGroup section */
-		9A0D4F3E1754F28A003D3ED0 /* InfoPlist.strings */ = {
-			isa = PBXVariantGroup;
-			children = (
-				9A0D4F3F1754F28A003D3ED0 /* en */,
-			);
-			name = InfoPlist.strings;
-			sourceTree = "<group>";
+/* Begin PBXTargetDependency section */
+		4F5DB0711EB60DE900DCBA19 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 9A0D4F681754F5D9003D3ED0 /* ClockView */;
+			targetProxy = 4F5DB0701EB60DE900DCBA19 /* PBXContainerItemProxy */;
 		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
 		9A0D4F801754F5F5003D3ED0 /* InfoPlist.strings */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -474,70 +458,67 @@
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
-		9A0D4F451754F28A003D3ED0 /* Debug */ = {
+		4F5DB0731EB60DE900DCBA19 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
 				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
 				CLANG_ENABLE_OBJC_ARC = YES;
-				CLANG_WARN_CONSTANT_CONVERSION = YES;
-				CLANG_WARN_EMPTY_BODY = YES;
-				CLANG_WARN_ENUM_CONVERSION = YES;
-				CLANG_WARN_INT_CONVERSION = YES;
-				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
 				COPY_PHASE_STRIP = NO;
-				FRAMEWORK_SEARCH_PATHS = (
-					"\"$(SDKROOT)/Developer/Library/Frameworks\"",
-					"\"$(DEVELOPER_LIBRARY_DIR)/Frameworks\"",
-				);
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEVELOPMENT_TEAM = Z2DF73ZW2D;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_OPTIMIZATION_LEVEL = 0;
-				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "ClockViewTests/ClockViewTests-Prefix.pch";
 				GCC_PREPROCESSOR_DEFINITIONS = (
 					"DEBUG=1",
 					"$(inherited)",
 				);
-				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
-				GCC_WARN_UNINITIALIZED_AUTOS = YES;
-				INFOPLIST_FILE = "ClockViewTests/ClockViewTests-Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
-				ONLY_ACTIVE_ARCH = YES;
-				PRODUCT_BUNDLE_IDENTIFIER = "com.nacho4d.${PRODUCT_NAME:rfc1034identifier}";
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				INFOPLIST_FILE = ClockViewTest/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				PRODUCT_BUNDLE_IDENTIFIER = com.nacho4d.ClockViewTest;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				WRAPPER_EXTENSION = octest;
 			};
 			name = Debug;
 		};
-		9A0D4F461754F28A003D3ED0 /* Release */ = {
+		4F5DB0741EB60DE900DCBA19 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
 				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
 				CLANG_ENABLE_OBJC_ARC = YES;
-				CLANG_WARN_CONSTANT_CONVERSION = YES;
-				CLANG_WARN_EMPTY_BODY = YES;
-				CLANG_WARN_ENUM_CONVERSION = YES;
-				CLANG_WARN_INT_CONVERSION = YES;
-				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
-				COPY_PHASE_STRIP = YES;
-				FRAMEWORK_SEARCH_PATHS = (
-					"\"$(SDKROOT)/Developer/Library/Frameworks\"",
-					"\"$(DEVELOPER_LIBRARY_DIR)/Frameworks\"",
-				);
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEVELOPMENT_TEAM = Z2DF73ZW2D;
+				ENABLE_NS_ASSERTIONS = NO;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
-				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "ClockViewTests/ClockViewTests-Prefix.pch";
-				GCC_WARN_UNINITIALIZED_AUTOS = YES;
-				INFOPLIST_FILE = "ClockViewTests/ClockViewTests-Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
-				PRODUCT_BUNDLE_IDENTIFIER = "com.nacho4d.${PRODUCT_NAME:rfc1034identifier}";
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				INFOPLIST_FILE = ClockViewTest/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				PRODUCT_BUNDLE_IDENTIFIER = com.nacho4d.ClockViewTest;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				VALIDATE_PRODUCT = YES;
-				WRAPPER_EXTENSION = octest;
 			};
 			name = Release;
 		};
@@ -733,14 +714,13 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		9A0D4F471754F28A003D3ED0 /* Build configuration list for PBXNativeTarget "ClockViewTests" */ = {
+		4F5DB0721EB60DE900DCBA19 /* Build configuration list for PBXNativeTarget "ClockViewTest" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				9A0D4F451754F28A003D3ED0 /* Debug */,
-				9A0D4F461754F28A003D3ED0 /* Release */,
+				4F5DB0731EB60DE900DCBA19 /* Debug */,
+				4F5DB0741EB60DE900DCBA19 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
 		};
 		9A0D4F721754F5D9003D3ED0 /* Build configuration list for PBXNativeTarget "ClockView" */ = {
 			isa = XCConfigurationList;
