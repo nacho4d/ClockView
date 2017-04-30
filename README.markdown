@@ -1,4 +1,4 @@
-# README 
+[![Build Status](https://travis-ci.org/nacho4d/ClockView.svg?branch=master)](https://travis-ci.org/nacho4d/ClockView)
 
 ## Overview
 **ClockView** is s simple class that will simulate an analog (or wall like) clock. ClockView makes use of various CALayers so it needs CoreAnimation (add QuartzCore.framework)
