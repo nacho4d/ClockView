@@ -10,6 +10,6 @@ xcode_sdk: iphonesimulator
 #  - xctool -v foo >/dev/null 2>&1 || { echo >&2 "No xctool found. Using xcodebuild and xcpretty" && alias xctool='xcodebuild "$@" | xcpretty -c'; exit 0; }
 #before_script:
 #  - set -o pipefail
-#script:
-#  - uname -a
+script:
+  - uname -a
 #  - xcodebuild -workspace ClockView.xcworkspace -scheme ClockView -sdk iphonesimulator build
