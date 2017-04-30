@@ -7,7 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		9A0D4F381754F28A003D3ED0 /* SenTestingKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9A0D4F371754F28A003D3ED0 /* SenTestingKit.framework */; };
+		4F5DB0651EB5F92C00DCBA19 /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4F5DB0641EB5F92C00DCBA19 /* XCTest.framework */; };
 		9A0D4F391754F28A003D3ED0 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1DF5F4DF0D08C38300B7A737 /* UIKit.framework */; };
 		9A0D4F3A1754F28A003D3ED0 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1D30AB110D05D00D00671497 /* Foundation.framework */; };
 		9A0D4F401754F28A003D3ED0 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 9A0D4F3E1754F28A003D3ED0 /* InfoPlist.strings */; };
@@ -55,6 +55,7 @@
 		1D30AB110D05D00D00671497 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		1DF5F4DF0D08C38300B7A737 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		288765A40DF7441C002DB57D /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		4F5DB0641EB5F92C00DCBA19 /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Platforms/iPhoneOS.platform/Developer/Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
 		9A0D4F361754F28A003D3ED0 /* ClockViewTests.octest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ClockViewTests.octest; sourceTree = BUILT_PRODUCTS_DIR; };
 		9A0D4F371754F28A003D3ED0 /* SenTestingKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SenTestingKit.framework; path = Library/Frameworks/SenTestingKit.framework; sourceTree = DEVELOPER_DIR; };
 		9A0D4F3D1754F28A003D3ED0 /* ClockViewTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "ClockViewTests-Info.plist"; sourceTree = "<group>"; };
@@ -97,7 +98,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				9A0D4F381754F28A003D3ED0 /* SenTestingKit.framework in Frameworks */,
+				4F5DB0651EB5F92C00DCBA19 /* XCTest.framework in Frameworks */,
 				9A0D4F391754F28A003D3ED0 /* UIKit.framework in Frameworks */,
 				9A0D4F3A1754F28A003D3ED0 /* Foundation.framework in Frameworks */,
 			);
@@ -151,6 +152,7 @@
 		29B97323FDCFA39411CA2CEA /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				4F5DB0641EB5F92C00DCBA19 /* XCTest.framework */,
 				1DF5F4DF0D08C38300B7A737 /* UIKit.framework */,
 				1D30AB110D05D00D00671497 /* Foundation.framework */,
 				288765A40DF7441C002DB57D /* CoreGraphics.framework */,
