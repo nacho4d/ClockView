@@ -12,4 +12,4 @@ xcode_sdk: iphonesimulator
 #  - set -o pipefail
 script:
   - uname -a
-#  - xcodebuild -workspace ClockView.xcworkspace -scheme ClockView -sdk iphonesimulator build
+  - xcodebuild -workspace ClockView.xcworkspace -scheme ClockView -sdk iphonesimulator build test
