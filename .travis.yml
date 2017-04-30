@@ -3,10 +3,10 @@ osx_image: xcode8
 xcode_workspace: ClockView.xcworkspace
 xcode_scheme: ClockView
 xcode_sdk: iphonesimulator
-#before_install:
-#  - gem install xcpretty
-before_script:
-  - set -e -o pipefail
+before_install:
+  - gem install xcpretty
+#before_script:
+#  - set -e -o pipefail
 script:
   - uname -a
-  - xcodebuild -workspace ClockView.xcworkspace -scheme ClockView -sdk iphonesimulator -destination 'platform=iOS Simulator,name=iPhone 6,OS=10.0' build test
+  - xcodebuild -workspace ClockView.xcworkspace -scheme ClockView -sdk iphonesimulator -destination 'platform=iOS Simulator,name=iPhone 6,OS=10.0' build test | xcpretty
