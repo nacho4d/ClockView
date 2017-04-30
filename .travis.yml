@@ -9,4 +9,4 @@ before_script:
   - set -e -o pipefail
 script:
   - uname -a
-  - xcodebuild -workspace ClockView.xcworkspace -scheme ClockView -sdk iphonesimulator -destination 'platform=iOS Simulator,name=iPhone 6,OS=10.0' build test | xcpretty -c
+  - xcodebuild -workspace ClockView.xcworkspace -scheme ClockView -sdk iphonesimulator -destination 'platform=iOS Simulator,name=iPhone 6,OS=10.0' build test
