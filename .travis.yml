@@ -1,0 +1,14 @@
+language: objective-c
+osx_image: xcode8.3
+xcode_workspace: ClockView.xcworkspace
+xcode_scheme: ClockView
+xcode_sdk: iphonesimulator
+#before_install:
+#  - gem install xcpretty
+# Cannot do this because it is not exported.
+#  - xctool -v foo >/dev/null 2>&1 || { echo >&2 "No xctool found. Using xcodebuild and xcpretty" && alias xctool='xcodebuild "$@" | xcpretty -c'; exit 0; }
+#before_script:
+#  - set -o pipefail
+#script:
+#  - uname -a
+#  - xcodebuild -workspace ClockView.xcworkspace -scheme ClockView -sdk iphonesimulator build
