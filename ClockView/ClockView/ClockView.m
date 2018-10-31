@@ -16,6 +16,7 @@
 
 - (void)start
 {
+    [self updateClock:nil];
 	timer = [NSTimer scheduledTimerWithTimeInterval:1.0 target:self selector:@selector(updateClock:) userInfo:nil repeats:YES];
 }
 
@@ -92,7 +93,7 @@
 float Degrees2Radians(float degrees) { return degrees * M_PI / 180; }
 
 //timer callback
-- (void) updateClock:(NSTimer *)theTimer{
+- (void) updateClock:(NSTimer *)theTimer {
 	
     NSDateComponents *dateComponents = [[NSCalendar currentCalendar] components:(NSCalendarUnitHour | NSCalendarUnitMinute | NSCalendarUnitSecond) fromDate:[NSDate date]];
 	NSInteger seconds = [dateComponents second];

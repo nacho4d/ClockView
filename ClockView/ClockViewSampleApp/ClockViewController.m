@@ -52,6 +52,7 @@
 
 - (void)viewWillAppear:(BOOL)animated
 {
+    [super viewWillAppear:animated];
 	//start the clock at current time
 	[clockView1 start];
 	[clockView2 start];
@@ -59,6 +60,7 @@
 
 - (void)viewWillDisappear:(BOOL)animated
 {
+    [super viewWillDisappear:animated];
 	//stop the clock
 	[clockView1 stop];
 	[clockView2 stop];
