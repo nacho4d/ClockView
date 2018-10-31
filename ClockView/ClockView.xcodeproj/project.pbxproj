@@ -30,7 +30,6 @@
 		9ABEF21E175E287800DA41C7 /* clock-min-background.png in Resources */ = {isa = PBXBuildFile; fileRef = 9ABEF216175E287800DA41C7 /* clock-min-background.png */; };
 		9ABEF21F175E287800DA41C7 /* clock-min-background_.png in Resources */ = {isa = PBXBuildFile; fileRef = 9ABEF217175E287800DA41C7 /* clock-min-background_.png */; };
 		9ABEF220175E287800DA41C7 /* clock-sec-background.png in Resources */ = {isa = PBXBuildFile; fileRef = 9ABEF218175E287800DA41C7 /* clock-sec-background.png */; };
-		9ABEF221175E287800DA41C7 /* OutputSample.png in Resources */ = {isa = PBXBuildFile; fileRef = 9ABEF219175E287800DA41C7 /* OutputSample.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -87,7 +86,6 @@
 		9ABEF216175E287800DA41C7 /* clock-min-background.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "clock-min-background.png"; sourceTree = "<group>"; };
 		9ABEF217175E287800DA41C7 /* clock-min-background_.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "clock-min-background_.png"; sourceTree = "<group>"; };
 		9ABEF218175E287800DA41C7 /* clock-sec-background.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "clock-sec-background.png"; sourceTree = "<group>"; };
-		9ABEF219175E287800DA41C7 /* OutputSample.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = OutputSample.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -219,7 +217,6 @@
 				9ABEF216175E287800DA41C7 /* clock-min-background.png */,
 				9ABEF217175E287800DA41C7 /* clock-min-background_.png */,
 				9ABEF218175E287800DA41C7 /* clock-sec-background.png */,
-				9ABEF219175E287800DA41C7 /* OutputSample.png */,
 			);
 			path = Images;
 			sourceTree = "<group>";
@@ -341,7 +338,6 @@
 				9ABEF21F175E287800DA41C7 /* clock-min-background_.png in Resources */,
 				9ABEF220175E287800DA41C7 /* clock-sec-background.png in Resources */,
 				4F5EF1862189EF0B007AE127 /* LaunchScreen.storyboard in Resources */,
-				9ABEF221175E287800DA41C7 /* OutputSample.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
