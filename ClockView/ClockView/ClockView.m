@@ -94,7 +94,7 @@ float Degrees2Radians(float degrees) { return degrees * M_PI / 180; }
 //timer callback
 - (void) updateClock:(NSTimer *)theTimer{
 	
-	NSDateComponents *dateComponents = [[NSCalendar currentCalendar] components:(NSHourCalendarUnit | NSMinuteCalendarUnit | NSSecondCalendarUnit) fromDate:[NSDate date]];
+    NSDateComponents *dateComponents = [[NSCalendar currentCalendar] components:(NSCalendarUnitHour | NSCalendarUnitMinute | NSCalendarUnitSecond) fromDate:[NSDate date]];
 	NSInteger seconds = [dateComponents second];
 	NSInteger minutes = [dateComponents minute];
 	NSInteger hours = [dateComponents hour];
