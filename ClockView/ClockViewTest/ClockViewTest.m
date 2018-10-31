@@ -6,7 +6,7 @@
 //
 //
 
-#import <XCTest/XCTest.h>
+@import XCTest;
 
 @interface ClockViewTest : XCTestCase
 

@@ -10,6 +10,7 @@
 		4F5DB06F1EB60DE900DCBA19 /* libClockView.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 9A0D4F691754F5D9003D3ED0 /* libClockView.a */; };
 		4F5DB0761EB60E2C00DCBA19 /* ClockViewTest.m in Sources */ = {isa = PBXBuildFile; fileRef = 4F5DB0751EB60E2C00DCBA19 /* ClockViewTest.m */; };
 		4F5EF1812189EA8A007AE127 /* libClockView.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 9A0D4F691754F5D9003D3ED0 /* libClockView.a */; };
+		4F5EF1862189EF0B007AE127 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4F5EF1852189EF0B007AE127 /* LaunchScreen.storyboard */; };
 		9A0D4F6A1754F5D9003D3ED0 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1D30AB110D05D00D00671497 /* Foundation.framework */; };
 		9A0D4F6F1754F5D9003D3ED0 /* ClockView.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 9A0D4F6E1754F5D9003D3ED0 /* ClockView.h */; };
 		9A0D4F711754F5D9003D3ED0 /* ClockView.m in Sources */ = {isa = PBXBuildFile; fileRef = 9A0D4F701754F5D9003D3ED0 /* ClockView.m */; };
@@ -19,9 +20,6 @@
 		9A0D4F821754F5F5003D3ED0 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 9A0D4F801754F5F5003D3ED0 /* InfoPlist.strings */; };
 		9A0D4F841754F5F5003D3ED0 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 9A0D4F831754F5F5003D3ED0 /* main.m */; };
 		9A0D4F881754F5F5003D3ED0 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 9A0D4F871754F5F5003D3ED0 /* AppDelegate.m */; };
-		9A0D4F8A1754F5F5003D3ED0 /* Default.png in Resources */ = {isa = PBXBuildFile; fileRef = 9A0D4F891754F5F5003D3ED0 /* Default.png */; };
-		9A0D4F8C1754F5F5003D3ED0 /* Default@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 9A0D4F8B1754F5F5003D3ED0 /* Default@2x.png */; };
-		9A0D4F8E1754F5F5003D3ED0 /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 9A0D4F8D1754F5F5003D3ED0 /* Default-568h@2x.png */; };
 		9A0D4F911754F5F5003D3ED0 /* ClockViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9A0D4F901754F5F5003D3ED0 /* ClockViewController.m */; };
 		9A0D4F941754F5F5003D3ED0 /* ClockViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9A0D4F921754F5F5003D3ED0 /* ClockViewController.xib */; };
 		9ABEF210175E251800DA41C7 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9A34401912F5C3E4001EC7CE /* QuartzCore.framework */; };
@@ -67,6 +65,7 @@
 		4F5DB06E1EB60DE900DCBA19 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		4F5DB0751EB60E2C00DCBA19 /* ClockViewTest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ClockViewTest.m; sourceTree = "<group>"; };
 		4F5EF17C2189E38D007AE127 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/ClockViewController.xib; sourceTree = "<group>"; };
+		4F5EF1852189EF0B007AE127 /* LaunchScreen.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = LaunchScreen.storyboard; sourceTree = "<group>"; };
 		9A0D4F371754F28A003D3ED0 /* SenTestingKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SenTestingKit.framework; path = Library/Frameworks/SenTestingKit.framework; sourceTree = DEVELOPER_DIR; };
 		9A0D4F691754F5D9003D3ED0 /* libClockView.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libClockView.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		9A0D4F6D1754F5D9003D3ED0 /* ClockView-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "ClockView-Prefix.pch"; sourceTree = "<group>"; };
@@ -78,9 +77,6 @@
 		9A0D4F831754F5F5003D3ED0 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		9A0D4F861754F5F5003D3ED0 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		9A0D4F871754F5F5003D3ED0 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		9A0D4F891754F5F5003D3ED0 /* Default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Default.png; sourceTree = "<group>"; };
-		9A0D4F8B1754F5F5003D3ED0 /* Default@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default@2x.png"; sourceTree = "<group>"; };
-		9A0D4F8D1754F5F5003D3ED0 /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
 		9A0D4F8F1754F5F5003D3ED0 /* ClockViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ClockViewController.h; sourceTree = "<group>"; };
 		9A0D4F901754F5F5003D3ED0 /* ClockViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ClockViewController.m; sourceTree = "<group>"; };
 		9A34401912F5C3E4001EC7CE /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
@@ -196,6 +192,7 @@
 				9A0D4F871754F5F5003D3ED0 /* AppDelegate.m */,
 				9A0D4F8F1754F5F5003D3ED0 /* ClockViewController.h */,
 				9A0D4F901754F5F5003D3ED0 /* ClockViewController.m */,
+				4F5EF1852189EF0B007AE127 /* LaunchScreen.storyboard */,
 				9A0D4F921754F5F5003D3ED0 /* ClockViewController.xib */,
 				9A0D4F7E1754F5F5003D3ED0 /* Supporting Files */,
 			);
@@ -208,9 +205,6 @@
 				9A0D4F7F1754F5F5003D3ED0 /* ClockViewSampleApp-Info.plist */,
 				9A0D4F801754F5F5003D3ED0 /* InfoPlist.strings */,
 				9A0D4F831754F5F5003D3ED0 /* main.m */,
-				9A0D4F891754F5F5003D3ED0 /* Default.png */,
-				9A0D4F8B1754F5F5003D3ED0 /* Default@2x.png */,
-				9A0D4F8D1754F5F5003D3ED0 /* Default-568h@2x.png */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
@@ -338,9 +332,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				9A0D4F821754F5F5003D3ED0 /* InfoPlist.strings in Resources */,
-				9A0D4F8A1754F5F5003D3ED0 /* Default.png in Resources */,
-				9A0D4F8C1754F5F5003D3ED0 /* Default@2x.png in Resources */,
-				9A0D4F8E1754F5F5003D3ED0 /* Default-568h@2x.png in Resources */,
 				9A0D4F941754F5F5003D3ED0 /* ClockViewController.xib in Resources */,
 				9ABEF21A175E287800DA41C7 /* -clock-face.png in Resources */,
 				9ABEF21B175E287800DA41C7 /* bliss-roman-aluminium-clock.jpg in Resources */,
@@ -349,6 +340,7 @@
 				9ABEF21E175E287800DA41C7 /* clock-min-background.png in Resources */,
 				9ABEF21F175E287800DA41C7 /* clock-min-background_.png in Resources */,
 				9ABEF220175E287800DA41C7 /* clock-sec-background.png in Resources */,
+				4F5EF1862189EF0B007AE127 /* LaunchScreen.storyboard in Resources */,
 				9ABEF221175E287800DA41C7 /* OutputSample.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
