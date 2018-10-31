@@ -27,11 +27,11 @@ Or it can be customized:
     [clockView stop];
     [clockView release];
 
-Example of ClockView. 
-*Big*: Customized style, 
-*Small*: Default style"
+## Screenshot 
 
-![Example of ClockView](https://github.com/nacho4d/ClockView/blob/master/ClockView/ClockViewSampleApp/Images/OutputSample.png?raw=true "Example of ClockView. Big:Customized style, Small:Default style")
+- *Big clock*: Customized with images.
+- *Small clock*: Default style.
+<img alt="Example of ClockView - Big:Customized style, Small:Default style" src="https://github.com/nacho4d/ClockView/blob/master/ClockView/ClockViewSampleApp/Images/OutputSample.png?raw=true" width="320"/>
 
 ## License
 
