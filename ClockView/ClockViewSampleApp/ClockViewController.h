@@ -7,7 +7,7 @@
 //  See the file License.txt for copying permission.
 //
 
-#import <UIKit/UIKit.h>
+@import UIKit;
 #import "ClockView.h"
 
 @interface ClockViewController : UIViewController 

@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		4F5DB06F1EB60DE900DCBA19 /* libClockView.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 9A0D4F691754F5D9003D3ED0 /* libClockView.a */; };
 		4F5DB0761EB60E2C00DCBA19 /* ClockViewTest.m in Sources */ = {isa = PBXBuildFile; fileRef = 4F5DB0751EB60E2C00DCBA19 /* ClockViewTest.m */; };
+		4F5EF1812189EA8A007AE127 /* libClockView.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 9A0D4F691754F5D9003D3ED0 /* libClockView.a */; };
 		9A0D4F6A1754F5D9003D3ED0 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1D30AB110D05D00D00671497 /* Foundation.framework */; };
 		9A0D4F6F1754F5D9003D3ED0 /* ClockView.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 9A0D4F6E1754F5D9003D3ED0 /* ClockView.h */; };
 		9A0D4F711754F5D9003D3ED0 /* ClockView.m in Sources */ = {isa = PBXBuildFile; fileRef = 9A0D4F701754F5D9003D3ED0 /* ClockView.m */; };
@@ -23,7 +24,6 @@
 		9A0D4F8E1754F5F5003D3ED0 /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 9A0D4F8D1754F5F5003D3ED0 /* Default-568h@2x.png */; };
 		9A0D4F911754F5F5003D3ED0 /* ClockViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9A0D4F901754F5F5003D3ED0 /* ClockViewController.m */; };
 		9A0D4F941754F5F5003D3ED0 /* ClockViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9A0D4F921754F5F5003D3ED0 /* ClockViewController.xib */; };
-		9ABEF20F175E22DA00DA41C7 /* libClockView.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 9ABEF20E175E22DA00DA41C7 /* libClockView.a */; };
 		9ABEF210175E251800DA41C7 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9A34401912F5C3E4001EC7CE /* QuartzCore.framework */; };
 		9ABEF21A175E287800DA41C7 /* -clock-face.png in Resources */ = {isa = PBXBuildFile; fileRef = 9ABEF212175E287800DA41C7 /* -clock-face.png */; };
 		9ABEF21B175E287800DA41C7 /* bliss-roman-aluminium-clock.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 9ABEF213175E287800DA41C7 /* bliss-roman-aluminium-clock.jpg */; };
@@ -76,7 +76,6 @@
 		9A0D4F7F1754F5F5003D3ED0 /* ClockViewSampleApp-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "ClockViewSampleApp-Info.plist"; sourceTree = "<group>"; };
 		9A0D4F811754F5F5003D3ED0 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		9A0D4F831754F5F5003D3ED0 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		9A0D4F851754F5F5003D3ED0 /* ClockViewSampleApp-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "ClockViewSampleApp-Prefix.pch"; sourceTree = "<group>"; };
 		9A0D4F861754F5F5003D3ED0 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		9A0D4F871754F5F5003D3ED0 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
 		9A0D4F891754F5F5003D3ED0 /* Default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Default.png; sourceTree = "<group>"; };
@@ -85,8 +84,6 @@
 		9A0D4F8F1754F5F5003D3ED0 /* ClockViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ClockViewController.h; sourceTree = "<group>"; };
 		9A0D4F901754F5F5003D3ED0 /* ClockViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ClockViewController.m; sourceTree = "<group>"; };
 		9A34401912F5C3E4001EC7CE /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
-		9ABEF20C175E22DA00DA41C7 /* ClockView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ClockView.h; sourceTree = "<group>"; };
-		9ABEF20E175E22DA00DA41C7 /* libClockView.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libClockView.a; sourceTree = "<group>"; };
 		9ABEF212175E287800DA41C7 /* -clock-face.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "-clock-face.png"; sourceTree = "<group>"; };
 		9ABEF213175E287800DA41C7 /* bliss-roman-aluminium-clock.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "bliss-roman-aluminium-clock.jpg"; sourceTree = "<group>"; };
 		9ABEF214175E287800DA41C7 /* clock-background.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "clock-background.png"; sourceTree = "<group>"; };
@@ -118,11 +115,11 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4F5EF1812189EA8A007AE127 /* libClockView.a in Frameworks */,
 				9ABEF210175E251800DA41C7 /* QuartzCore.framework in Frameworks */,
 				9A0D4F7A1754F5F5003D3ED0 /* UIKit.framework in Frameworks */,
 				9A0D4F7B1754F5F5003D3ED0 /* Foundation.framework in Frameworks */,
 				9A0D4F7C1754F5F5003D3ED0 /* CoreGraphics.framework in Frameworks */,
-				9ABEF20F175E22DA00DA41C7 /* libClockView.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -195,7 +192,6 @@
 			isa = PBXGroup;
 			children = (
 				9ABEF211175E287800DA41C7 /* Images */,
-				9ABEF20A175E22DA00DA41C7 /* ClockView */,
 				9A0D4F861754F5F5003D3ED0 /* AppDelegate.h */,
 				9A0D4F871754F5F5003D3ED0 /* AppDelegate.m */,
 				9A0D4F8F1754F5F5003D3ED0 /* ClockViewController.h */,
@@ -212,38 +208,11 @@
 				9A0D4F7F1754F5F5003D3ED0 /* ClockViewSampleApp-Info.plist */,
 				9A0D4F801754F5F5003D3ED0 /* InfoPlist.strings */,
 				9A0D4F831754F5F5003D3ED0 /* main.m */,
-				9A0D4F851754F5F5003D3ED0 /* ClockViewSampleApp-Prefix.pch */,
 				9A0D4F891754F5F5003D3ED0 /* Default.png */,
 				9A0D4F8B1754F5F5003D3ED0 /* Default@2x.png */,
 				9A0D4F8D1754F5F5003D3ED0 /* Default-568h@2x.png */,
 			);
 			name = "Supporting Files";
-			sourceTree = "<group>";
-		};
-		9ABEF20A175E22DA00DA41C7 /* ClockView */ = {
-			isa = PBXGroup;
-			children = (
-				9ABEF20B175E22DA00DA41C7 /* include */,
-				9ABEF20D175E22DA00DA41C7 /* lib */,
-			);
-			name = ClockView;
-			path = build/ClockView;
-			sourceTree = SOURCE_ROOT;
-		};
-		9ABEF20B175E22DA00DA41C7 /* include */ = {
-			isa = PBXGroup;
-			children = (
-				9ABEF20C175E22DA00DA41C7 /* ClockView.h */,
-			);
-			path = include;
-			sourceTree = "<group>";
-		};
-		9ABEF20D175E22DA00DA41C7 /* lib */ = {
-			isa = PBXGroup;
-			children = (
-				9ABEF20E175E22DA00DA41C7 /* libClockView.a */,
-			);
-			path = lib;
 			sourceTree = "<group>";
 		};
 		9ABEF211175E287800DA41C7 /* Images */ = {
@@ -595,8 +564,6 @@
 				GCC_C_LANGUAGE_STANDARD = gnu99;
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_OPTIMIZATION_LEVEL = 0;
-				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "ClockViewSampleApp/ClockViewSampleApp-Prefix.pch";
 				GCC_PREPROCESSOR_DEFINITIONS = (
 					"DEBUG=1",
 					"$(inherited)",
@@ -604,10 +571,7 @@
 				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
 				GCC_WARN_UNINITIALIZED_AUTOS = YES;
 				INFOPLIST_FILE = "ClockViewSampleApp/ClockViewSampleApp-Info.plist";
-				LIBRARY_SEARCH_PATHS = (
-					"$(inherited)",
-					"\"$(SRCROOT)/build/ClockView/lib\"",
-				);
+				LIBRARY_SEARCH_PATHS = "$(inherited)";
 				ONLY_ACTIVE_ARCH = YES;
 				OTHER_LDFLAGS = "-ObjC";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.nacho4d.${PRODUCT_NAME:rfc1034identifier}";
@@ -631,14 +595,9 @@
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				COPY_PHASE_STRIP = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
-				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "ClockViewSampleApp/ClockViewSampleApp-Prefix.pch";
 				GCC_WARN_UNINITIALIZED_AUTOS = YES;
 				INFOPLIST_FILE = "ClockViewSampleApp/ClockViewSampleApp-Info.plist";
-				LIBRARY_SEARCH_PATHS = (
-					"$(inherited)",
-					"\"$(SRCROOT)/build/ClockView/lib\"",
-				);
+				LIBRARY_SEARCH_PATHS = "$(inherited)";
 				OTHER_LDFLAGS = "-ObjC";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.nacho4d.${PRODUCT_NAME:rfc1034identifier}";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -651,6 +610,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
+				CLANG_ENABLE_MODULES = YES;
 				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
 				CLANG_WARN_BOOL_CONVERSION = YES;
 				CLANG_WARN_COMMA = YES;
@@ -690,6 +650,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
+				CLANG_ENABLE_MODULES = YES;
 				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
 				CLANG_WARN_BOOL_CONVERSION = YES;
 				CLANG_WARN_COMMA = YES;
